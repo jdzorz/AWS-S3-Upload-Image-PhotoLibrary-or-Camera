@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D594E53B1CBC052000F126E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D594E53A1CBC052000F126E0 /* AppDelegate.swift */; };
+		D594E53D1CBC052000F126E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D594E53C1CBC052000F126E0 /* ViewController.swift */; };
+		D594E5401CBC052000F126E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D594E53E1CBC052000F126E0 /* Main.storyboard */; };
+		D594E5421CBC052000F126E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D594E5411CBC052000F126E0 /* Assets.xcassets */; };
+		D594E5451CBC052000F126E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D594E5431CBC052000F126E0 /* LaunchScreen.storyboard */; };
+		D594E5501CBC052000F126E0 /* s3_upload_from_camera_or_libraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D594E54F1CBC052000F126E0 /* s3_upload_from_camera_or_libraryTests.swift */; };
+		D594E55B1CBC052000F126E0 /* s3_upload_from_camera_or_libraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D594E55A1CBC052000F126E0 /* s3_upload_from_camera_or_libraryUITests.swift */; };
+		D594E56A1CBC055E00F126E0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D594E5691CBC055E00F126E0 /* libz.tbd */; };
+		D594E5711CBC06A500F126E0 /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D594E5701CBC06A500F126E0 /* libz.1.tbd */; };
+		D594E5761CBC073500F126E0 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D594E5721CBC06E800F126E0 /* AWSCore.framework */; };
+		D594E5771CBC073500F126E0 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D594E5731CBC06E800F126E0 /* AWSS3.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D594E54C1CBC052000F126E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D594E52F1CBC052000F126E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D594E5361CBC052000F126E0;
+			remoteInfo = "s3-upload-from-camera-or-library";
+		};
+		D594E5571CBC052000F126E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D594E52F1CBC052000F126E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D594E5361CBC052000F126E0;
+			remoteInfo = "s3-upload-from-camera-or-library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D594E5371CBC052000F126E0 /* s3-upload-from-camera-or-library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "s3-upload-from-camera-or-library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D594E53A1CBC052000F126E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D594E53C1CBC052000F126E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D594E53F1CBC052000F126E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D594E5411CBC052000F126E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D594E5441CBC052000F126E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D594E5461CBC052000F126E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D594E54B1CBC052000F126E0 /* s3-upload-from-camera-or-libraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "s3-upload-from-camera-or-libraryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D594E54F1CBC052000F126E0 /* s3_upload_from_camera_or_libraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s3_upload_from_camera_or_libraryTests.swift; sourceTree = "<group>"; };
+		D594E5511CBC052000F126E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D594E5561CBC052000F126E0 /* s3-upload-from-camera-or-libraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "s3-upload-from-camera-or-libraryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D594E55A1CBC052000F126E0 /* s3_upload_from_camera_or_libraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s3_upload_from_camera_or_libraryUITests.swift; sourceTree = "<group>"; };
+		D594E55C1CBC052000F126E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D594E5691CBC055E00F126E0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		D594E56F1CBC05FC00F126E0 /* AWS-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AWS-Bridge.h"; sourceTree = "<group>"; };
+		D594E5701CBC06A500F126E0 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		D594E5721CBC06E800F126E0 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
+		D594E5731CBC06E800F126E0 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D594E5341CBC052000F126E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D594E5761CBC073500F126E0 /* AWSCore.framework in Frameworks */,
+				D594E5771CBC073500F126E0 /* AWSS3.framework in Frameworks */,
+				D594E5711CBC06A500F126E0 /* libz.1.tbd in Frameworks */,
+				D594E56A1CBC055E00F126E0 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D594E5481CBC052000F126E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D594E5531CBC052000F126E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D594E52E1CBC052000F126E0 = {
+			isa = PBXGroup;
+			children = (
+				D594E5681CBC054500F126E0 /* Frameworks */,
+				D594E5391CBC052000F126E0 /* s3-upload-from-camera-or-library */,
+				D594E54E1CBC052000F126E0 /* s3-upload-from-camera-or-libraryTests */,
+				D594E5591CBC052000F126E0 /* s3-upload-from-camera-or-libraryUITests */,
+				D594E5381CBC052000F126E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D594E5381CBC052000F126E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D594E5371CBC052000F126E0 /* s3-upload-from-camera-or-library.app */,
+				D594E54B1CBC052000F126E0 /* s3-upload-from-camera-or-libraryTests.xctest */,
+				D594E5561CBC052000F126E0 /* s3-upload-from-camera-or-libraryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D594E5391CBC052000F126E0 /* s3-upload-from-camera-or-library */ = {
+			isa = PBXGroup;
+			children = (
+				D594E53A1CBC052000F126E0 /* AppDelegate.swift */,
+				D594E53C1CBC052000F126E0 /* ViewController.swift */,
+				D594E53E1CBC052000F126E0 /* Main.storyboard */,
+				D594E5411CBC052000F126E0 /* Assets.xcassets */,
+				D594E5431CBC052000F126E0 /* LaunchScreen.storyboard */,
+				D594E5461CBC052000F126E0 /* Info.plist */,
+				D594E56F1CBC05FC00F126E0 /* AWS-Bridge.h */,
+			);
+			path = "s3-upload-from-camera-or-library";
+			sourceTree = "<group>";
+		};
+		D594E54E1CBC052000F126E0 /* s3-upload-from-camera-or-libraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				D594E54F1CBC052000F126E0 /* s3_upload_from_camera_or_libraryTests.swift */,
+				D594E5511CBC052000F126E0 /* Info.plist */,
+			);
+			path = "s3-upload-from-camera-or-libraryTests";
+			sourceTree = "<group>";
+		};
+		D594E5591CBC052000F126E0 /* s3-upload-from-camera-or-libraryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D594E55A1CBC052000F126E0 /* s3_upload_from_camera_or_libraryUITests.swift */,
+				D594E55C1CBC052000F126E0 /* Info.plist */,
+			);
+			path = "s3-upload-from-camera-or-libraryUITests";
+			sourceTree = "<group>";
+		};
+		D594E5681CBC054500F126E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D594E5721CBC06E800F126E0 /* AWSCore.framework */,
+				D594E5731CBC06E800F126E0 /* AWSS3.framework */,
+				D594E5701CBC06A500F126E0 /* libz.1.tbd */,
+				D594E5691CBC055E00F126E0 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D594E5361CBC052000F126E0 /* s3-upload-from-camera-or-library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D594E55F1CBC052000F126E0 /* Build configuration list for PBXNativeTarget "s3-upload-from-camera-or-library" */;
+			buildPhases = (
+				D594E5331CBC052000F126E0 /* Sources */,
+				D594E5341CBC052000F126E0 /* Frameworks */,
+				D594E5351CBC052000F126E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "s3-upload-from-camera-or-library";
+			productName = "s3-upload-from-camera-or-library";
+			productReference = D594E5371CBC052000F126E0 /* s3-upload-from-camera-or-library.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D594E54A1CBC052000F126E0 /* s3-upload-from-camera-or-libraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D594E5621CBC052000F126E0 /* Build configuration list for PBXNativeTarget "s3-upload-from-camera-or-libraryTests" */;
+			buildPhases = (
+				D594E5471CBC052000F126E0 /* Sources */,
+				D594E5481CBC052000F126E0 /* Frameworks */,
+				D594E5491CBC052000F126E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D594E54D1CBC052000F126E0 /* PBXTargetDependency */,
+			);
+			name = "s3-upload-from-camera-or-libraryTests";
+			productName = "s3-upload-from-camera-or-libraryTests";
+			productReference = D594E54B1CBC052000F126E0 /* s3-upload-from-camera-or-libraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D594E5551CBC052000F126E0 /* s3-upload-from-camera-or-libraryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D594E5651CBC052000F126E0 /* Build configuration list for PBXNativeTarget "s3-upload-from-camera-or-libraryUITests" */;
+			buildPhases = (
+				D594E5521CBC052000F126E0 /* Sources */,
+				D594E5531CBC052000F126E0 /* Frameworks */,
+				D594E5541CBC052000F126E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D594E5581CBC052000F126E0 /* PBXTargetDependency */,
+			);
+			name = "s3-upload-from-camera-or-libraryUITests";
+			productName = "s3-upload-from-camera-or-libraryUITests";
+			productReference = D594E5561CBC052000F126E0 /* s3-upload-from-camera-or-libraryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D594E52F1CBC052000F126E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jose Deras";
+				TargetAttributes = {
+					D594E5361CBC052000F126E0 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D594E54A1CBC052000F126E0 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D594E5361CBC052000F126E0;
+					};
+					D594E5551CBC052000F126E0 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D594E5361CBC052000F126E0;
+					};
+				};
+			};
+			buildConfigurationList = D594E5321CBC052000F126E0 /* Build configuration list for PBXProject "s3-upload-from-camera-or-library" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D594E52E1CBC052000F126E0;
+			productRefGroup = D594E5381CBC052000F126E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D594E5361CBC052000F126E0 /* s3-upload-from-camera-or-library */,
+				D594E54A1CBC052000F126E0 /* s3-upload-from-camera-or-libraryTests */,
+				D594E5551CBC052000F126E0 /* s3-upload-from-camera-or-libraryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D594E5351CBC052000F126E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D594E5451CBC052000F126E0 /* LaunchScreen.storyboard in Resources */,
+				D594E5421CBC052000F126E0 /* Assets.xcassets in Resources */,
+				D594E5401CBC052000F126E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D594E5491CBC052000F126E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D594E5541CBC052000F126E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D594E5331CBC052000F126E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D594E53D1CBC052000F126E0 /* ViewController.swift in Sources */,
+				D594E53B1CBC052000F126E0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D594E5471CBC052000F126E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D594E5501CBC052000F126E0 /* s3_upload_from_camera_or_libraryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D594E5521CBC052000F126E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D594E55B1CBC052000F126E0 /* s3_upload_from_camera_or_libraryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D594E54D1CBC052000F126E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D594E5361CBC052000F126E0 /* s3-upload-from-camera-or-library */;
+			targetProxy = D594E54C1CBC052000F126E0 /* PBXContainerItemProxy */;
+		};
+		D594E5581CBC052000F126E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D594E5361CBC052000F126E0 /* s3-upload-from-camera-or-library */;
+			targetProxy = D594E5571CBC052000F126E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D594E53E1CBC052000F126E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D594E53F1CBC052000F126E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D594E5431CBC052000F126E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D594E5441CBC052000F126E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D594E55D1CBC052000F126E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D594E55E1CBC052000F126E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D594E5601CBC052000F126E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "s3-upload-from-camera-or-library/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Self.s3-upload-from-camera-or-library";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D594E5611CBC052000F126E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "s3-upload-from-camera-or-library/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Self.s3-upload-from-camera-or-library";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D594E5631CBC052000F126E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "s3-upload-from-camera-or-libraryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Self.s3-upload-from-camera-or-libraryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/s3-upload-from-camera-or-library.app/s3-upload-from-camera-or-library";
+			};
+			name = Debug;
+		};
+		D594E5641CBC052000F126E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "s3-upload-from-camera-or-libraryTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Self.s3-upload-from-camera-or-libraryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/s3-upload-from-camera-or-library.app/s3-upload-from-camera-or-library";
+			};
+			name = Release;
+		};
+		D594E5661CBC052000F126E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "s3-upload-from-camera-or-libraryUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Self.s3-upload-from-camera-or-libraryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "s3-upload-from-camera-or-library";
+			};
+			name = Debug;
+		};
+		D594E5671CBC052000F126E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "s3-upload-from-camera-or-libraryUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Self.s3-upload-from-camera-or-libraryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "s3-upload-from-camera-or-library";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D594E5321CBC052000F126E0 /* Build configuration list for PBXProject "s3-upload-from-camera-or-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D594E55D1CBC052000F126E0 /* Debug */,
+				D594E55E1CBC052000F126E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D594E55F1CBC052000F126E0 /* Build configuration list for PBXNativeTarget "s3-upload-from-camera-or-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D594E5601CBC052000F126E0 /* Debug */,
+				D594E5611CBC052000F126E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D594E5621CBC052000F126E0 /* Build configuration list for PBXNativeTarget "s3-upload-from-camera-or-libraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D594E5631CBC052000F126E0 /* Debug */,
+				D594E5641CBC052000F126E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D594E5651CBC052000F126E0 /* Build configuration list for PBXNativeTarget "s3-upload-from-camera-or-libraryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D594E5661CBC052000F126E0 /* Debug */,
+				D594E5671CBC052000F126E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D594E52F1CBC052000F126E0 /* Project object */;
+}
